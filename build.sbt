@@ -6,7 +6,7 @@ ThisBuild / organization := "com.mapr"
 ThisBuild / version      := "0.10.0-SNAPSHOT"
 ThisBuild / scalaVersion := scala212
 
-scalaVersion := "2.11.12"
+scalaVersion := "2.12.10"
 
 lazy val sparkBenchmarks = project
   .in(file("."))
@@ -24,7 +24,7 @@ lazy val dfsio = project
     crossScalaVersions := supportedScalaVersions,
     name := "spark-benchmarks-dfsio",
     buildInfoPackage := "com.bbva.spark.benchmarks.dfsio",
-    scalaVersion := "2.11.12",
+    scalaVersion := "2.12.10",
     Dependencies.Spark,
     Dependencies.Scopt,
     Dependencies.Alluxio
