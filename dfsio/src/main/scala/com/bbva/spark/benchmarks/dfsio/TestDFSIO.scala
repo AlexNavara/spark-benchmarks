@@ -44,6 +44,8 @@ object TestDFSIO extends App with LazyLogging {
 
   Logger.getLogger("akka").setLevel(Level.WARN)
   //Logger.getLogger("org").setLevel(Level.WARN)
+  Logger.getRootLogger.setLevel(Level.INFO)
+  Logger.getLogger(TestDFSIO.getClass).setLevel(Level.INFO)
 
   TestDFSIOConfParser.parseAndRun(args) { conf =>
 

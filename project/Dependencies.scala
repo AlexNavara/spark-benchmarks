@@ -8,7 +8,7 @@ object Dependencies {
   val ScalaLoggingVersion = "3.5.0"
   val ScalaTestVersion = "3.0.1"
   val ScoptVersion = "3.5.0"
-  val SparkVersion = "2.4.7.0-mapr-701"
+  val SparkVersion = "2.4.5.2-mapr-700"
 
   val Common = Seq(
     libraryDependencies ++= Seq(
